@@ -11,122 +11,111 @@ body {
 
 }
 
-.top-head{
-    display: flex;
-    border-bottom: 2px solid rgb(233, 233, 233);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: white; 
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    padding:10px 20px;
-    height:auto;
-}
-
-.space{
-    width: auto;
-}
-
-.sjoping-cart{
-    position: absolute;
-}
-
-#cart-count {
-    position: absolute; 
-    top: 44px;
-    right: 48px;
-    background-color: rgb(255, 0, 0);
-    color: white;
-    border-radius: 50%;
-    font-size: 12px;
-    height: 18px;
-    width: 18px;
+.top-head {
+    height: 100px;
+    border-top: 2px solid rgb(211, 211, 211);
+    border-bottom: 2px solid rgb(211, 211, 211);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 1000;
 }
 
-.navbar{
-    height: 120px;  
-    display: flex;  
+.left {
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
-    margin-left: 30px;
+    padding-left: 5rem;
 }
 
-.logo{
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
     background-image: url("https://www.dotandkey.com/cdn/shop/files/Vector_5.svg?v=1720438003&width=300");
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 50px;
-    max-height: 100px;
-    width: 180px;
-    max-width: 100%;
+    height: 80px;
+    width: 300px;
+    /* margin: 150px; */
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     height: 44px;
-    width: 100%;
-    max-width: 300px;
-    border: 2px solid black;
+    width: 50%;
+    border: 2px solid rgb(161, 161, 161);
     border-radius: 5px;
 }
 
-.user-help-div{
-    width: auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-left: 0px;
+input::placeholder {
+    letter-spacing: 1.5px;
+    color: gray;
 }
 
-#search-input{
+#search-input {
     height: 40px;
     width: 100%;
     border: none;
+    border-radius: 5px;
+
 }
 
-.search-icon{
-   margin: 5px 10px 0px 10px;
+.search-icon {
+    margin: 5px 10px 0px 10px;
     font-size: 20px;
 }
 
-.fa-solid{
+.fa-solid {
     color: #000;
     font-size: 20px;
 }
 
+#cart-count {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -10px;
+}
 
-.second-head{
+
+.second-head {
     height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    margin-top: 130px;
-    overflow-x:auto;
-    white-space:nowrap;
-    gap:30px;
-    padding:10px;
+    margin-top: 100px;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 30px;
+    padding: 10px;
 }
 
-.second-head::-webkit-scrollbar{
-    display:none;
+.second-head::-webkit-scrollbar {
+    display: none;
 }
 
-#img-section{
-    height:55vw;
-    max-height:400px;
-    min-height:180px;
+#img-section {
+    height: 55vw;
+    max-height: 400px;
+    min-height: 180px;
     position: relative;
     background-position: center;
     background-size: cover;
-    animation: imagechange 15s ease-in infinite alternate-reverse ;
+    animation: imagechange 15s ease-in infinite alternate-reverse;
 }
 
 @keyframes imagechange {
@@ -145,12 +134,13 @@ body {
     75% {
         background-image: url("https://www.dotandkey.com/cdn/shop/files/MOIST_DESK_be5518ac-2e4e-4dc4-878f-a803c7677b21.jpg?v=1781518488&width=1600");
     }
-    100%{
+
+    100% {
         background-image: url("https://www.dotandkey.com/cdn/shop/files/DESK1706161615_188a2232-fad6-44b8-8f98-9d958b114a8f.jpg?v=1776975999&width=1600");
     }
 }
 
-.product-head{
+.product-head {
     padding-top: 20px;
     height: 60px;
     width: 100%;
@@ -161,14 +151,14 @@ body {
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
-    border-top :1px solid black;
+    border-top: 1px solid black;
 }
 
-.container{
+.container {
     min-height: 600px;
 }
 
-.dot-and-key{
+.dot-and-key {
     background-image: url("https://www.dotandkey.com/cdn/shop/files/Group_1400004106_b411ac76-99dc-4676-9d4b-e354a07010f8.png?format=webp&v=1782156629&width=600");
     height: 70px;
     width: 100%;
@@ -182,7 +172,7 @@ body {
     background-position: center;
 }
 
-.head{
+.head {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,87 +183,88 @@ body {
     margin-top: 30px;
 }
 
-.product-title{
+.product-title {
     height: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    display:flex;
-    overflow-x:auto;
-    white-space:nowrap;
-    gap:20px;
-    padding:10px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+    padding: 10px;
     font-size: 25px;
 }
 
-.product-title::-webkit-scrollbar{
-    display:none;
+/* .product-title::-webkit-scrollbar {
+    display: none;
+} */
+
+.product-title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.product-title a{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.product-title button{
-    height:45px;
-    width:150px;
-    border:1px solid black;
-    border-radius:10px;
-    cursor:pointer;
+.product-title button {
+    height: 45px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
     font-size: 22px;
+    background-color: white;
 }
 
-.in-container{
-    display:flex;
+.in-container {
+    display: flex;
     gap: 20px;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
     flex-wrap: nowrap;
     margin-left: 10px;
-    padding:10px;
-    scrollbar-width: none; /* For Firefox */
+    padding: 10px;
+    scrollbar-width: none;
+    /* For Firefox */
 }
 
-.in-container::-webkit-scrollbar{
-    display:none;
+.in-container::-webkit-scrollbar {
+    display: none;
 }
 
-.box{
-    height:250px;
-    width:280px;
+.box {
+    height: 250px;
+    width: 280px;
     /* border:2px solid gray; */
-    padding:15px;
-    background-color:white;
+    padding: 15px;
+    background-color: white;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
     transition: .4s;
 }
 
-.box:hover{
+.box:hover {
     transform: scale(1.08);
 }
 
-.outer-box{
+.outer-box {
     border: 2px solid rgb(247, 241, 241);
     height: 570px;
-    flex:0 0 280px;
+    flex: 0 0 280px;
     border-radius: 20px 20px 0 0;
-    background-color: rgb(247, 247, 238);
+    background-color: white;
     border-radius: 20px;
-    transition:.4s;
+    transition: .4s;
 }
 
-.outer-box:hover{
+.outer-box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.benefits-print{
+.benefits-print {
     margin-top: 10px;
     margin-left: 5px;
     font-size: 12px;
@@ -283,9 +274,10 @@ body {
     padding: 2px 6px;
 }
 
-.title-print{
+.title-print {
     height: 60px;
     margin-top: 10px;
+    margin-left: 8px;
     font-size: 15px !important;
     font-weight: 600;
     color: #111;
@@ -293,50 +285,47 @@ body {
     text-align: left;
 }
 
-.rating{
-    display:flex;
-    align-items:center;
-    gap: 8px;
-    font-family:Arial, sans-serif;
-}
-
-.stars{
-    color:#f5a623;
-    font-size:20px;
-    letter-spacing:1px;
-}
-
-.reviews{
-    margin-top: 3px;
-    font-size:14px;
-    color:#666;
-}
-
-.weight-gm{
+.rating {
+    margin-left: 5px;
     display: flex;
-    gap: 10px;
-    margin-left: 10px;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, sans-serif;
 }
 
-.weight{
+.stars {
+    color: #f5a623;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.reviews {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #666;
+}
+
+.weight-gm {
+    display: flex;
+    /* gap: 10px; */
+}
+
+.weight {
+    margin-left: 10px;
     margin-top: 10px;
-    background-color: #ffffff;
-    border: 1.5px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     width: 60px;
     height: 30px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.gm{   
-    background-color: #fff;
-    border: none;
-    color: #ff40b1;
     font-weight: 600;
 }
 
-.money-div{
+
+.money-div {
     margin-top: 10px;
     font-size: 20px !important;
     display: block;
@@ -350,12 +339,12 @@ body {
     font-weight: 600 !important;
 }
 
-.non-bold{
+.non-bold {
     font-size: 20px;
 }
 
-.pcl-offer{
-    background: linear-gradient(90deg,#ffe2e5 0,#fff7f9);
+.pcl-offer {
+    background: linear-gradient(90deg, #ffe2e5 0, #fff7f9);
     margin: 8px 5px 0;
     border-radius: 10px;
     padding: 4px 7px;
@@ -369,7 +358,7 @@ body {
     font-weight: 700;
 }
 
-.cart{
+.cart {
     height: 40px;
     width: 90%;
     border-radius: 10px;
@@ -383,17 +372,17 @@ body {
     transition: .3s;
 }
 
-.cart:hover{
+.cart:hover {
     background-color: #ff006a;
     cursor: pointer;
 }
 
-.Addtocart{
+.Addtocart {
     font-size: 15px;
     font-weight: bold;
 }
 
-.feature{
+.feature {
     margin-top: 30px;
     height: 280px;
     width: 100%;
@@ -527,8 +516,8 @@ h2{
 }
 
 .active{
-    background-color: #ff40b1;
-    color: rgb(0, 0, 0);
+    border: 2px solid hsl(325, 100%, 63%);
+    color: #ff4081;
 }
 
 #search-input:focus{
@@ -537,4 +526,13 @@ h2{
 
 .search-bar:focus-within{
     border:2px solid #ff4081;
+}
+
+.hide-price{
+    display:none;
+}
+
+.btn-active{
+    border: 2px solid #ff4081;
+    color: #ff4081;
 }
