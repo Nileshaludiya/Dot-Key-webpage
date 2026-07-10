@@ -10,32 +10,28 @@
 </head>
 
 <body>
-
-
-    <header class="top-head">
-        <div class="space">
-            <div class="navbar">
-                <div class="logo"></div>
-            </div>
+    <nav class="top-head">
+        <div class="left">
+            <div class="logo"></div>
         </div>
 
-        <div class="user-help-div">
+        <div class="right">
             <div class="search-bar">
                 <div class="search-icon">🔍︎</div>
-                <input id="search-input" type="text" placeholder="Search health care products">
+                <input id="search-input" type="text" placeholder="Search health care products" aria-label="Search products">
             </div>
-            <a href="#" class="track-order">
+            <a href="#" class="track-order" aria-label="Track Order">
                 <i class="fa-solid fa-truck"></i>
             </a>
-            <a href="#" class="shoping-cart">
-                <span id="cart-count">0</span>
+            <div class="shoping-cart" aria-label="Shopping Cart">
                 <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-            <a href="#" class="user-account">
+                <span id="cart-count">0</span>
+            </div>
+            <a href="#" class="user-account" aria-label="User Account">
                 <i class="fa-solid fa-user"></i>
             </a>
         </div>
-    </header>
+    </nav>
 
     <header class="second-head">
         <P>SHOP ALL</P>
@@ -81,14 +77,15 @@
                     <span class="reviews">(2151 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">80g</button></div>
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">80g</button>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>595</p>
+                    <p class="price price80"><span class="non-bold">₹</span>595</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>445</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>505</span></span></div>
-                <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
+                <button class="cart" aria-label="Add Vitamin C Sunscreen to Cart"><span class="Addtocart">ADD TO CART</span></button>
             </div>
 
 
@@ -105,7 +102,7 @@
                     <span class="reviews">(567 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>649</p>
@@ -128,7 +125,7 @@
                     <span class="reviews">(469 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>445</p>
@@ -150,11 +147,12 @@
                     <span class="reviews">(1460 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">80g</button></div>
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">80g</button>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>595</p>
+                    <p class="price price80"><span class="non-bold">₹</span>595</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>445</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>505</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -175,11 +173,12 @@
                     <span class="reviews">(1758 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">80g</button></div>
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">80g</button>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>595</p>
+                    <p class="price price80"><span class="non-bold">₹</span>595</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>445</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>505</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -198,11 +197,12 @@
                     <span class="reviews">(1786 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">80g</button></div>
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">80g</button>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>595</p>
+                    <p class="price price80"><span class="non-bold">₹</span>595</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>445</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>505</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -220,11 +220,12 @@
                     <span class="reviews">(71 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">80g</button></div>
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">80g</button>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>445</p>
+                    <p class="price price80"><span class="non-bold">₹</span>595</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>445</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>378</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -241,8 +242,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(1706 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">50g</button></div>
-                <div class=""></div>
+                <button class="weight">50g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>549</p>
                 </div>
@@ -262,8 +262,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(514 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">80g</button></div>
-                <div class=""></div>
+                <button class="weight">80g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>599</p>
                 </div>
@@ -283,8 +282,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(1175 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">20g</button></div>
-                <div class=""></div>
+                <button class="weight">20g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>595</p>
                 </div>
@@ -307,8 +305,8 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(1910 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">60g</button></div>
-                <div class="money-div">
+                <button class="weight">60g</button>
+                                    <div class="money-div">
                     <p><span class="non-bold">₹</span>495</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>420</span></span></div>
@@ -328,11 +326,12 @@
                     <span class="reviews">(2160 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">175g</button></div>
-                    <div class="weight"><button class="gm">100g</button></div>
+                    <button class="weight">175g</button>
+                    <button class="weight">100g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>599</p>
+                    <p class="price price80"><span class="non-bold">₹</span>599</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>395</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>509</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -351,11 +350,12 @@
                     <span class="reviews">(813 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">60g</button></div>
-                    <div class="weight"><button class="gm">50g</button></div>
+                    <button class="weight">60g</button>
+                    <button class="weight">50g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>595</p>
+                    <p class="price price80"><span class="non-bold">₹</span>495</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>395</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>420</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -373,7 +373,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(1758 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">60g</button></div>
+                <button class="weight">60g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>495</p>
                 </div>
@@ -393,7 +393,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(2775 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">100g</button></div>
+                <button class="weight">100g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>399</p>
                 </div>
@@ -413,7 +413,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(2160 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">50g</button></div>
+                <button class="weight">50g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>399</p>
                 </div>
@@ -433,7 +433,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(1777 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">60g</button></div>
+                <button class="weight">60g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>495</p>
                 </div>
@@ -453,8 +453,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(1787 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">60g</button></div>
-                <div class=""></div>
+                <button class="weight">60g</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>599</p>
                 </div>
@@ -474,8 +473,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(789 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">30ml</button></div>
-                <div class=""></div>
+                <button class="weight">30ml</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>345</p>
                 </div>
@@ -496,7 +494,7 @@
                     <span class="reviews">(1006 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">60ml</button></div>
+                    <button class="weight">60ml</button>
                 </div>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>595</p>
@@ -522,11 +520,12 @@
                     <span class="reviews">(925 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">30ml</button></div>
-                    <div class="weight"><button class="gm">20ml</button></div>
+                    <button class="weight">30ml</button>
+                    <button class="weight">20ml</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>495</p>
+                    <p class="price price80"><span class="non-bold">₹</span>695</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>499</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>420</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -545,11 +544,12 @@
                     <span class="reviews">(1161 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">30ml</button></div>
-                    <div class="weight"><button class="gm">20ml</button></div>
+                    <button class="weight">30ml</button>
+                    <button class="weight">20ml</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>599</p>
+                    <p class="price price80"><span class="non-bold">₹</span>599</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>449</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>509</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -568,11 +568,12 @@
                     <span class="reviews">(1226 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">30ml</button></div>
-                    <div class="weight"><button class="gm">20ml</button></div>
+                    <button class="weight">30ml</button>
+                    <button class="weight">20ml</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>599</p>
+                    <p class="price price80"><span class="non-bold">₹</span>599</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>449</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>509</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -585,17 +586,18 @@
                 <div class="benefits-print">
                     <p>Oily acne-prone & Sensitive Skin</p>
                 </div>
-                <div class="title-print">Cica + 10% Niacinamide Face Serum for Oily Skin</div>
+                <div class="title-print">Cica + 2% Salicylic Acid Serum for Acne</div>
                 <div class="rating">
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(706 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">30ml</button></div>
-                    <div class="weight"><button class="gm">20ml</button></div>
+                    <button class="weight">30ml</button>
+                    <button class="weight">20ml</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>550</p>
+                    <p class="price price80"><span class="non-bold">₹</span>550</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>399</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>487</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -613,7 +615,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(2775 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">30ml</button></div>
+                <button class="weight">30ml</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>599</p>
                 </div>
@@ -633,8 +635,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(1787 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">30ml</button></div>
-                <div class=""></div>
+                <button class="weight">30ml</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>599</p>
                 </div>
@@ -654,8 +655,7 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(608 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">30ml</button></div>
-                <div class=""></div>
+                <button class="weight">30ml</button>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>665</p>
                 </div>
@@ -676,12 +676,13 @@
                     <span class="reviews">(261 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">30ml</button></div>
-                    <div class="weight"><button class="gm">20ml</button></div>
+                    <button class="weight">30ml</button>
+                    <button class="weight">20ml</button>
                 </div>
                 <div class=""></div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>599</p>
+                    <p class="price price80"><span class="non-bold">₹</span>599</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>449</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>509</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -704,11 +705,12 @@
                     <span class="reviews">(972 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">175g</button></div>
-                    <div class="weight"><button class="gm">100g</button></div>
+                    <button class="weight">175g</button>
+                    <button class="weight">100g</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>375</p>
+                    <p class="price price80"><span class="non-bold">₹</span>375</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>249</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>318</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -726,11 +728,12 @@
                     <span class="reviews">(952 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">175ml</button></div>
-                    <div class="weight"><button class="gm">100ml</button></div>
+                    <button class="weight">175ml</button>
+                    <button class="weight">100ml</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>375</p>
+                    <p class="price price80"><span class="non-bold">₹</span>375</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>249</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>318</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -748,11 +751,12 @@
                     <span class="reviews">(1089 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">175ml</button></div>
-                    <div class="weight"><button class="gm">100ml</button></div>
+                    <button class="weight">175ml</button>
+                    <button class="weight">100ml</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>375</p>
+                    <p class="price price80"><span class="non-bold">₹</span>375</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>249</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>318</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -771,11 +775,12 @@
                     <span class="reviews">(1777 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">175ml</button></div>
-                    <div class="weight"><button class="gm">100ml</button></div>
+                    <button class="weight">175ml</button>
+                    <button class="weight">100ml</button>
                 </div>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>375</p>
+                    <p class="price price80"><span class="non-bold">₹</span>375</p>
+                    <p class="price price50 hide-price"><span class="non-bold">₹</span>249</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>318</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -794,7 +799,7 @@
                     <span class="reviews">(1357 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">100ml</button></div>
+                    <button class="weight">100ml</button>
                 </div>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>249</p>
@@ -816,7 +821,7 @@
                     <span class="reviews">(870 Reviews)</span>
                 </div>
                 <div class="weight-gm">
-                    <div class="weight"><button class="gm">100ml</button></div>
+                    <button class="weight">100ml</button>
                 </div>
                 <div class="money-div">
                     <p><span class="non-bold">₹</span>249</p>
@@ -837,9 +842,9 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(321 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">100ml</button></div>
+                <button class="weight">100ml</button>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>249</p>
+                    <p class="non-bold">₹249</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>211</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -857,9 +862,9 @@
                     <span class="stars">★★★★★</span>
                     <span class="reviews">(10 Reviews)</span>
                 </div>
-                <div class="weight"><button class="gm">120ml</button></div>
+                <button class="weight">120ml</button>
                 <div class="money-div">
-                    <p><span class="non-bold">₹</span>329</p>
+                    <p class="non-bold">₹329</p>
                 </div>
                 <div class="pcl-offer"><span>Get at ₹ <span>279</span></span></div>
                 <button class="cart"><span class="Addtocart">ADD TO CART</span></button>
@@ -948,9 +953,6 @@
         </footer>
         <p class="copyright">©️ 2026 Dot & Key Wellness Ltd. All Rights Reserved.</p>
     </div>
-
-
-
 
     <script src="DaK.js"></script>
 </body>
