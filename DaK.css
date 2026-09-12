@@ -103,17 +103,15 @@ input::placeholder {
 
 .second-head {
     position: relative;
-    height: 12vh;
+    height: 27px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-size: 20px;
-    margin-top: 12vh;
-    overflow-x: auto;
-    white-space: nowrap;
+    font-size: 10px;
+    margin-top: 50px;
     gap: 1%;
-    padding: 10px;
+    padding: 2px;
 }
 
 .second-head::-webkit-scrollbar {
